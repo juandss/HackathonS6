@@ -1,0 +1,34 @@
+.container {
+  padding: 1rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px 200px 200px 100px;
+  grid-template-areas:
+    "nav nav nav nav nav"
+    "header header header header header"
+    "main main main main main"
+    "footer footer footer footer footer";
+
+  @media (min-width: 768px) {
+    width: 750px;
+  }
+  @media (min-width: 992px) {
+    width: 970px;
+  }
+  @media (min-width: 1200px) {
+    width: 1024px;
+  }
+}
+.container nav {
+  grid-area: nav;
+}
+.container header {
+  grid-area: header;
+}
+.container main {
+  grid-area: main;
+}
+.container footer {
+  grid-area: footer;
+}
